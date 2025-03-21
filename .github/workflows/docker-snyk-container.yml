@@ -5,6 +5,11 @@ on:
   push:
     branches: [ master ]
 
+permissions:
+  contents: read
+  security-events: write
+
+
 jobs:
   login:
     runs-on: ubuntu-latest
