@@ -41,9 +41,9 @@ jobs:
         uses: snyk/actions/setup@806182742461562b67788a64410098c9d9b96adb
 
 
-        # Runs Snyk SCA analysis 
+        # Runs Snyk SCA analysis - use snyk monitor to send results back to snyk.io
       - name: Snyk SCA
-        run: snyk test -d --org=3a74cceb-0952-429e-8eaf-d48989afa944 || true
+        run: snyk monitor -d --org=3a74cceb-0952-429e-8eaf-d48989afa944 || true
 
         env:
           # This is where you will need to introduce the Snyk API token created with your Snyk account
