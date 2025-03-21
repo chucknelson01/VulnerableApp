@@ -1,13 +1,13 @@
 version: "3.9"
 services:
     VulnerableApp-base:
-      image: sasanlabs/owasp-vulnerableapp:unreleased
+      image: chucknelson01/owasp-vulnerableapp:unreleased
       
     VulnerableApp-jsp:
-      image: sasanlabs/owasp-vulnerableapp-jsp:latest
+      image: chucknelson01/owasp-vulnerableapp-jsp:latest
  
     VulnerableApp-php:
-      image: sasanlabs/owasp-vulnerableapp-php:latest
+      image: chucknelson01/owasp-vulnerableapp-php:latest
     
     VulnerableApp-facade:
       depends_on:
