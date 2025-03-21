@@ -28,8 +28,7 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-
-jobs:
+      
   snyk:
     permissions:
       contents: read # for actions/checkout to fetch code
