@@ -34,7 +34,7 @@ jobs:
         name: Create tag for GitHub
         uses: tvdias/github-tagger@v0.0.1
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          repo-token: "${{ secrets.GH_TOKEN }}"
           tag: '${{ steps.gitversion.outputs.semver }}'
       -
         name: Grant execute permission for gradlew
