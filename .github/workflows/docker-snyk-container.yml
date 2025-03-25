@@ -63,6 +63,10 @@ jobs:
           # This is where you will need to introduce the Snyk API token created with your Snyk account
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
+      - 
+        name: Snyk Container SBOM
+        run: snyk container sbom --format=cyclonedx1.6+json -d --org=3a74cceb-0952-429e-8eaf-d48989afa944 
+
       -
         name: Build with Gradle and Push
         run: |
