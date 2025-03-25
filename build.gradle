@@ -65,7 +65,7 @@ spotless {
 
 jib {
     to {
-        image = 'sasanlabs/owasp-vulnerableapp:unreleased'
+        image = 'chucknelson01/owasp-vulnerableapp:unreleased'
     }
     
     // Set up multi-platform build only if the task is not :jibDockerBuild
