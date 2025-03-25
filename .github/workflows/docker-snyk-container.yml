@@ -43,12 +43,11 @@ jobs:
       -
         name: Grant execute permission for gradlew
         run: chmod +x gradlew
-
       -
         name: Build Container Image with Jib 
         run: |
           ./gradlew jibDockerBuild \
-          --image=chucknelson01/owasp-v
+          --image=chucknelson01/owasp-vulnerableapp:unreleased
           
       - 
         name: Set up Snyk CLI to check for security issues
